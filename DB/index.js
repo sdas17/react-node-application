@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const jwt = require('jsonwebtoken');
+const cors = require('cors')
 const app = express();
 const PORT = process.env.PORT || 5000;
 
@@ -14,7 +15,7 @@ const users = [
 const SECRET_KEY = 'your_secret_key'; // Change this to a more secure key
 
 app.use(bodyParser.json());
-
+app.use(cors())
 // Serve static files first
 app.use(express.static(path.join(__dirname, 'client/build')));
 
