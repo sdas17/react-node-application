@@ -53,7 +53,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'samaritas-new-american' # Replace with your actual Azure App Service name
+        app-name: 'reactpoc' # Replace with your actual Azure App Service name
         slot-name: 'production' # Use 'production' if you're deploying to a production slot, or omit this line if not using slots
-        publish-profile: ${{ secrets.SECRETS }}
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2CA467D796B6473CAB615D2B0ABF53FA }}
         package: ./DB
