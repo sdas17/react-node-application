@@ -55,6 +55,6 @@ jobs:
       with:
         app-name: 'subhampoc' # Replace with your actual Azure App Service name
         slot-name: 'production' # Use 'production' if you're deploying to a production slot, or omit this line if not using slots
-        publish-profile: ${{ secrets.AZUREAPPSERVICE_CLIENTID_DF0BAA66925141C0ABCD00034372D745 }}
+        publish-profile: ${{ secrets.SECREATE_TOKEN }}
         package: ./DB
 
