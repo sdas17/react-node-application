@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from '../Component/Login/LoginPage';
 import Home from '../Component/Home/Home';
 import Register from '../Component/Register/Register';
-import RefugeeList from '../Component/RefugeeList/RefugeeList';
 import ProtectedRoute from '../Component/security/ProtectedRoute';
 
 const App = () => {
